@@ -32,8 +32,12 @@ function Router() {
 
   return (
     <Switch>
+      {/* Show login page if not authenticated */}
       {!isAuthenticated ? (
-        <Route path="/" component={Landing} />
+        <>
+          <Route path="/" component={Landing} />
+          <Route path="/login" component={Login} />
+        </>
       ) : (
         <>
           <Route path="/" component={Home} />
