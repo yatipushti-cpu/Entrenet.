@@ -13,7 +13,7 @@ import EmployerDashboard from "@/pages/employer-dashboard";
 import JobListings from "@/pages/job-listings";
 import Messages from "@/pages/messages";
 import EditProfile from "@/pages/edit-profile";
-import Login from "@/pages/localAuth";
+import Login from "@/pages/login";
 
 function Router() {
   const { isAuthenticated, isLoading, user } = useAuth();
